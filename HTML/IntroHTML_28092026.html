@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a HTML</title>
+</head>
+<body>
+    <h1>Definición de Página Web</h1>
+    <ul>
+        <li>Una página web, lo podemos definir como un documento de texto con marcas o etiquetas.</li>
+        <li>Estas etiquetas, permiten presentar información al usuario: texto, imágenes, vídeos, fotos, tablas, etc</li>
+        <li>Las marcas se llaman etiquetas o tags, NO SON UN LENGUAJE DE PROGRAMACIÓN COMO JAVA, PYTHON, PHP...</li>
+        <li>Estas páginas, están pensandas para que sean visibles en cualquier tipo de dispositivo a través de <b>navegadores web</b></li>
+        <li>Los navegadores web sen encargan por lo tanto, de interpretar estas marcas con el fin de que los usuarios podamos visualizar y ver su contenido.</li>
+    </ul>
+
+    <hr>
+
+    <h1>Definición de HTML</h1>
+    El acrónimo HTML, viene del nombre <b>HyperText Mackup Language</b>, es decir, Lenguaje de Marcado de Hipertexto.
+    <br>Esto quiere decir, que las páginas web son muchos documentos HTML que están vinculados entre ellos por hipervínculos o hipertexto.
+    <br>Las principales características que debemos tener en cuenta sobre estos, son las siguientes:
+    <ul>
+        <li>La estructura HTML, viene definida por la W3Consortium</li>
+        <li>Pueden aglutinar textos, audios/video, tablas, imágenes, etc. que podemos combinar a nuestro gusto.
+            <br>Además, permite insertar enlaces a otras páginas mediante hiperenlaces.
+        </li>
+        <li>HTML,es un lenguaje de marcas o marcado, y está diseñado para visualizar contenido a través de los navegadores. NO es un lenguaje de programación</li>
+        <li>Para que una página web sea considerada como tal, tiene que tener una extensión que sea <b>.html</b>. Ejemplo: index.html</li>
+    </ul>
+<h2>¿Qué sucede cuando visitamos una página web?</h2>
+    <img src="img/servidor.png" alt="" width="500px">
+
+Las etiquetas en HTML, se escriben de la siguiente manera:
+<ul>
+    <li>Se escriben entre desigualdades, suelen ir en parejas y rodeando al texto al que aplica.</li>
+    <li>Tienen una etiqueta de apertura y una de cierre.</li>
+    <li>La parte de apertura contiene como mínimo el nombre de la marca o etiqueta, y el de cierre, empieza con el caracter / seguido del nombre de la etiqueta.</li>
+</ul>
+<img src="img/estructura.png" alt="" width="500px">
+<br>En HTML, además, podemos encontrarnos con etiquetas especiales que sólo tienen etiquetas de apertura.
+<br>Es lo que se conoce como <b>monoetiquetas</b>. Ejem: img, hr, br, etc.
+<br>Las etiquetas que ya tengan etiqueta de apertura y de cierre o que sean monoetiquetas, pueden tener atributos.
+<br>Los atributos con cualidades que facilitan el poder dotar a las etiquetas de unas características concretas.
+
+<h2>Estructura de un página web y comentarios</h2>
+<h3>Comentarios en HTML y en CSS</h3>
+Los comentarios en HTML y en CSS, se utilizan para dar información al programador con el fin de informar de las cosas que vamos realizando.
+<br>Los comentarios deben ser claros, sencillos y concisos.
+<br>Los comentarios, NO van a aparecer en los navegadores.Es decir, quedan en la estructura interna de nuestra web, y sólo se ven si inspeccionamos el documento.
+<br>Para poder poner comentarios en HTML, utilizamos la siguiente sintaxis:
+<ul>
+    <li>Comenzamos con el simbolo menor que <b>'<'</b> seguido de <b>'!'</b> y de <b>'--'</b></li>
+    <li>Introducimos el texto con el mensaje a comentar</li>
+    <li>Cerramos la estructura con <b>'--'</b> seguido de <b>'>'</b></li>
+    <!--Esto es un comentario en HTML-->
+</ul>
+<br>Para poder poner un comentario en CSS, la estructura que utilizaremos es similar a la que utilizaríamos en Java.
+<br>Ponemos /*texto a comentar */
+<hr>
+<h1>Estructura de un documento HTML </h1>
+La estructura de un documento HTML, se divide en dos grandes zonas o partes.
+<ul>
+    <li>Head: El head o cabecera, se caracteriza por ser la zona donde almacenaremos el nombre de la pestaña (title),
+        <br>favicon, librerias externas de CSS y JS, metadatos, idioma, etc.
+    </li>
+    <li>Body: El body o cuerpo del documento HTML, que es donde vamos a introducir TODA la información de nuestra
+        <br>web: imágenes, vídeos, texto, audios, formularios, etc.
+    </li>
+</ul>
+<br>Importante, para poder indicar el tipo de nomartiva / regla de HTML que vamos a utilizar, utilizamos la nomenclatura
+<br> 'Doctype html', tal y como se muestra en la imagen.
+<br><img src="img/HTML-Doctype.png" alt="" width="600px" height="200px">
+<br><img src="img/estructuraHTML.png" alt="" width="600px">
+<br><img src="img/docuHTML.png" alt="" width="600px">
+
+<h2>Titulos en HTML</h2>
+En HTML, podemos establecer o usar hasta 6 niveles de titulos.
+<br>Los titulos van estructurados desde el h1 hasta el h6, siendo el h1 el de mayor tamaño, y el h6,el de menor tamaño.
+<h1>Este título es de nivel o tamaño h1</h1>
+<h2>Este título es de nivel o tamaño h2</h2>
+<h3>Este título es de nivel o tamaño h3</h3>
+<h4>Este título es de nivel o tamaño h4</h4>
+<h5>Este título es de nivel o tamaño h5</h5>
+<h6>Este título es de nivel o tamaño h6</h6>
+
+<h2>Insertar Textos en HTML</h2>
+Para poder introducir texto en HTML, podemos hacerlo de las siguientes maneras:
+<ul>
+    <li>Escribiendo directamente dentro de la etiqueta de apertura y cierre del body</li>
+    <li>Podemos utilizar saltos de párrafo. Para ello utilizaremos la etiqueta p con apertura y cierre.</li>
+    <li>Podemos utilizar saltos de línea. Para ello utilizaremos la monoetiqueta br</li>
+</ul>
+<br>Ejemplo de un salto de línea en HTML
+<p>Ejemplo de salto de párrafo en un HTML</p>
+<br>La diferencia entre un un salto de párrafo y un salto de línea, es el tamaño de separación.
+<br>el salto de línea ocupa o es como si escribíeramos texto de seguido y se pusiera debajo uno del otro, mientras
+<br>que el salto de párrafo es como si escribiéramos un texto nuevo y la separación es mayor.
+<p>
+    A parte de poder insertar texto en nuestro HTML, podemos utilizar un elemento de separaciónpara establecer
+    <br> espacios o secciones dentro de un documento.
+    <br>Este elemento es el hr que es una monoetiqueta que reperesnta una línea horizontal de separación entre secciones
+    <br> dentro de un documento HTML.
+    <br>Para poder customizar la etiqueta hr, podemos utilizar los atributos size (tamaño de grosor), width (para anchura)
+    <br>y color (para establecer el color predeterminado)
+</p>
+<hr size="10px" width="800px" color="pink">
+Esto sería otra sección de texto en HTML separada por un hr.
+</body>
+</html>
