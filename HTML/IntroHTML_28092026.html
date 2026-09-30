@@ -1,11 +1,11 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta n<!DOCTYPE html>ame="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introducción a HTML</title>
 </head>
-<body>
+<body bgcolor="#F5B027">
     <h1>Definición de Página Web</h1>
     <ul>
         <li>Una página web, lo podemos definir como un documento de texto con marcas o etiquetas.</li>
@@ -107,5 +107,51 @@ Para poder introducir texto en HTML, podemos hacerlo de las siguientes maneras:
 </p>
 <hr size="10px" width="800px" color="pink">
 Esto sería otra sección de texto en HTML separada por un hr.
+<h1>Textos Preformateados en HTML</h1>
+Los textos preformateados en HTML, consisten en insertar textos en HTML con las características que nosotros queramos.
+<br>Es decir, podemos escribir un texto de manera que se visualice tal y como lo hemos escrito en el body.
+<pre>
+    Hola                                esto                        
+                    es un texto                     HTML            
+                                preformateado
+    <code>
+        function diHola{
+            console.log("Hola, esto es un mensaje de texto con la etiqueta pre y code en HTML");
+            alert("Buenos dias Vietnan, os voy a dar bien dado en la materia de LMSGE jejeje pero con cariño siempre");
+        }
+    </code>
+</pre>
+<hr>
+<h2>Formatos de Texto</h2>
+<ul>
+    <li>Etiqueta b: sirve para poner el texto en <b>negrita</b></li>
+    <li>Etiqueta i: sirve para poner el texto en <i>cursiva</i></li>
+    <li>Etiqueta del: sirve para poner un texto <del>tachado</del></li>
+    <li>Etiqueta em: sirve para poner un texto en <em>énfasis</em>. Es similar a la i, pero no es igual...</li>
+    <li>Etiqueta small: sirve para poner un texto <small>en pequeño</small></li>
+    <li>Etiqueta sup: sirve para poner un super índice en un texto. Ejemplo: X<sup>2</sup>+X+3</li>
+    <li>Etiqueta sub: sirve para poner un subíndice en un texto. Ejemplo: H<sub>2</sub>O</li>
+    <li>Etiqueta mark: sirve para subrayar un texto. Ejemplo: <mark>vamos a aprobar todos... si traemos el jamón al profe</mark></li>
+    <li>Etiqueta q: sirve para poner <q>Citas pequeñas</q> de textos</li>
+    <li>Etiqueta cite: sirve para poner <cite>Títulos de Trabajos</cite></li>
+</ul>
+<h2>Etiquetas que ya no se utilizan en HTML5</h2>
+Con la llegada de HTML5, algunas etiquetas que hasta entonces se utilizaban  para poder dar apariencia y formato en HTML,
+<br> han sido descatalogadas y por lo tanto, ya no se utilizan.
+<br>A partir de ahora, para poder dar formato y apariencia a la estructura HTML, utilizaremos el lenguaje de estilos CSS.
+<br>La estructura que hasta ahora utilizamos en HTML para aplicar color, tipografía y tamaño al texto, eran los siguientes:
+<ul>
+    <li><b>face</b>: Este es un atributo que nos pmermitía poder poner un tipo de tipografía concreta.</li>
+    <li><b>color</b>: Este atributo permitía poder aplicar la paleta de colores que quisieramos a nuestro texto</li>
+    <li><b>size</b>: Este atributo permitía poder aplicar un tamaño a nuestras fuentes y tipografías.</li>
+</ul>
+<br>Ejemplo:
+<h3><font face="Verdana" color="pink">   Esto es un texto de nivel 3 al que le he aplicado un color, y tipografía</font></h3>
+<br><font face="Algerian" color="blue" size="22px">Esto es un texto con color, tipografía y tamaño en HTML</font>
+<br>Para poder alinear texto en HTML, debemos de utilizar el atributo align dentro de una etiqueta de estructura semántica.
+<br>Ejemplo:
+<p align="center"><font color="red" size="16px" face="Verdana">Esto es un texto alineado al centro</font></p>
+<p align="left"><font color="green" size="10px" face="Algerian">Esto es un texto alineado al izquierda</font></p>
+<p align="right"><font color="orange" size="12px" face="Arial">Esto es un texto alineado al derecha</font></p>
 </body>
 </html>
