@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas en HTML5</title>
+</head>
+<body>
+    <h1>Listas en HTML5</h1>
+    Las listas en HTML5 se organizan en tres tipos y sirven para organizar el texto con el fin de darle un formato más
+    <br>claro y consiso.
+    <ul>
+        <li>
+            <b>Listas Ordenadas (ol)</b>:Listas ordenadas que van en orden.
+            <br>Las siglas ol, vienen dadas por OrderedList    
+        </li>
+        <li>
+            <b>Listas Desordenadas (ul):</b> Listas desordenadas, es decir, no van en orden.
+            <br>Las siglas ul, vienen dadas por UnOrdered List
+        </li>
+        <li>
+            <b>Listas de Definición (dl):</b> Listas de definición. Las siglas dl, vienen dadas
+            <br>por Definition List.
+        </li>
+    </ul>
+    Dentro de un elemento lista, sea del tipo que sea, podemos insertar cualquier tipo de elemento:
+    <br>textos, imágenes, tablas, vídeos, audios, etc.
+    <br>Por lo tanto, se pueden combinar listas ordenadas con desordenadas, y viceversa.
+    <hr>
+    <h2>Listas Ordenadas (OL)</h2>
+    La estructura de una lista ordenada (ol), es la siguiente:
+    <ul>
+        <li>La lista esta formada por la etiqueta de apertura y cierre ol</li>
+        <li>Internamente, disponemos de una etiqueta li en la que pondremos los elementos a listar,
+            <br>es decir, el contenido de nuestra lista.
+        </li>
+        <li>La etiqueta li irá siempre tanto en listas ordenadas como desordenadas, porque son parte de su 
+            <br>estructura.
+        </li>
+    </ul>
+    <br>Ejemplo de Lista Ordenada
+    <ol>
+        <li>Picachu</li>
+        <li>Charmander</li>
+        <li>Bulbasur</li>
+        <li>Squitle</li>
+        <li>Giratina</li>
+    </ol>
+    <hr>
+    <h2>Listas Desordenadas (UL)</h2>
+    La estructura de una lista desordenada (ul), es la siguiente:
+    <ul>
+        <li>La lista esta formada por la etiqueta de apertura y cierre ul</li>
+        <li>Internamente, disponemos de una etiqueta li en la que pondremos los elementos a listar,
+            <br>es decir, el contenido de nuestra lista.
+        </li>
+        <li>La etiqueta li irá siempre tanto en listas deordenadas como ordenadas, porque son parte de su 
+            <br>estructura.
+        </li>
+    </ul>
+    <br>Ejemplo de Lista Desordenada
+    <ul>
+        <li>Windows 11</li>
+        <li>Linux Mint</li>
+        <li>Kali Linux</li>
+        <li>Debian</li>
+        <li>MacOS Yosemite</li>
+    </ul>
+
+    <h2>Formatear Listas Ordenadas y Desordenadas en HTML5</h2>
+    En HTML5, podemos formatear la apariencia de la estructura de las listas con el atributo type y start.
+    <br>Con el atributo start, podemos indicar el orden en el que queremos empezar nuestra lista.
+    <br>Con el atributo type, podemos indicar el tipo de icono que le queremos aplicar a nuestra lista.
+    <h3>Ejemplo de Lista Ordenada aplicando los atributos start y type</h3>
+    <ol start="5" type="a">
+        <li>Podemos utilizar letras en mayuscula (A)</li>
+        <li>Podemos utilizar letras en minúcula (a)</li>
+        <li>Podemos utilizar numeros normales (1,2,3,...)</li>
+        <li>Podemos utilizar números romanos en mayusculas y minúsculas (i I ii II iii III iv IV, etc.</li>
+        <li>Podemos utilizar start para indicar en qué posición queremos que comience.</li>
+    </ol>
+    <h3>Ejemplo de Lista Desordenada aplicando los atributo type</h3>
+    <ul type="square">
+        <li>Podemos utilizar el tipo disc (viñetas redondas rellenas)</li>
+        <li>Podemos utilizar el tipo circle(viñertas redondas huecas)</li>
+        <li>Podemos utilizar square (cuadrados)</li>
+    </ul>
+    <h2>Listas de Definición</h2>
+    <div>
+        Las listas de definición, tienen una estructura totalmente distinta a las anteriores.
+        <br>Tienen en este caso la siguiente estructura interna:
+        <ul>
+            <li>La etiqueta <b>dl</b>: Description List. Delimita la lista completa.</li>
+            <li>La etiqueta <b>dt</b>: Description Term. Delimitar el término de la lista</li>
+            <li>La etiqueta <b>dd</b>: Definition Description- Delimita la definición del término.</li>
+        </ul>
+        <h3>Ejemplo de Lista de Definición</h3>
+        <dl><!--Lista de Definición-->
+            <dt><b>dl</b></dt>
+                <!--Término a definir-->
+                <dd>Crea la caja que contiene los items de la lista.
+                    <!--Definición del término-->
+                </dd>
+                <dt><b>dt</b></dt>
+                <dd>Es el item que contiene un término a definir.</dd>
+                <dt><b>dd</b></dt>
+                <dd>Es el item que contiene la definición.</dd>
+        </dl>
+    </div>
+    <hr>
+<h1>Listas anidadas en HTML</h1>
+<div>
+    En HTML, podemos anidar diferentes tipos de listas combinando de esta manera listas ordenadas con desordenas y viceversa.
+    <br>Suelen emplearse listas anidadas de hasta un 3er nivel.
+</div>
+<br>Ejemplo de Lista Anidada:
+<ul>
+    <li>CFGS DAW / DAM
+        <ol>
+            <li>Lenguaje de Marcas
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript (JS)</li>
+                    <li>PHP</li>
+                </ul>
+            </li>
+            <li>Sistemas Informáticos</li>
+            <li>Programación</li>
+            <li>Bases de Datos</li>
+            <li>Entornos de Desarrollo</li>
+            <li>Itinerario para la Profesionalidad (ITPE)</li>
+        </ol>
+    </li>
+    <li>CFGS ASIR
+        <ol>
+            <li>Fundamentos de Hardware</li>
+            <li>Lenguaje de Marcas</li>
+            <li>Planificación y Administración de Redes</li>
+            <li>Implantación de Sistemas Operativos</li>
+            <li>Gestión de Bases de Datos</li>
+            <li>Itinerario para la Profesionalidad</li>
+        </ol>
+    </li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secciones HTML5</title>
+</head>
+<body>
+    <h1>Secciones en HTML5</h1>
+    Cuando vamos a crear una página web, debemos tener en cuenta, que esta puede estar dividia en distintas
+    <br>secciones o partes, en donde alojaremos distinto contenido que queramos mostrar.
+    <br>En tecnologías como HTML4, se utilizaban principalmente una serie de cajas o elementos
+    <br>llamados <b>div</b> para poder insertar este tipo de información.
+    <br>Estos div junto a CSS, se les asignaba un idenfiticador (id) o clases (class) para darles un nombre concreto, así como una
+    <br>serie de atributos o características concretas.
+    <br>A continuación se muestra una estructura de la página con elementos div:
+    <br><img src="img/estructuraHTML4.png" alt="" width="500px">
+    <br>Con la llegada de HTML5, esta estructura cambia, puesto que ahora ya no se utilizan estos id o class para dar
+    <br>el nombre como anteriomente se utilizaban, sino que ya existen etiquetas propias con los nombres asociados
+    <br>a la estructura del documento HTML5.
+    <br><img src="img/estructuraHTML5.png" alt="" height="300px" width="600px">
+    <hr>
+    <h2>Ejemplo sencillo de una página web</h2>
+    Imaginaros una web para la Universidad / Centro. Esta web, la podemos dividir en tres zonas principales que son: cabecera (header),
+    <br>contenido principal (main), y el pie de página (footer).
+    <br>
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Web UEM</title>
+        </head>
+        <body>
+            <!-- header: cabecer de nuestro documento HTML5. Se inserta todo lo relaciona como son títulos  de cabecera, títulos importante, etc. -->
+            <header>
+                <h1>Centro Profesional UEM</h1>
+            </header>
+            <main>
+                <h2>Bienvenidos al CFGS DAW de la Universidad Europea de Madrid</h2>
+                <p>Aquí encontraréis toda la información sobre los CFGS de la UEM</p>
+            </main>
+            <!-- footer: pie de página. sirve poner el nombre, dirección, información relevante sobre quíen ha heho la web -->
+            <footer>
+                <p>Curso 2026-27. Creado por los alumnos de 1ºDAW.</p>
+            </footer>
+        </body>
+        </html>
+        <hr>
+        <h2>¿Para qué sirve cada etiqueta HTML5?</h2>
+        <h3>Cabecera o Header</h3>
+        La etiqueta cabecera o header en HTML5, sirve para contener el título y/o elementos introductorios de nuestra página web. Es la parte superior deuna página o articulo.
+        <br>Ejemplo: En un documento HTML5, podemos tener un header con un título que sea de nuestra página web, y un texto introductorio del mismo.
+        <br>En el caso de una tienda online, podría ser el encabezado del mismo.
+        <h3>Menú de Navegación o Nav</h3>
+        En HTML5, podemos agrupar enlaces a otras páginas o apartados, a través de la etiqueta nav.
+        <br>Con esta etiqueta por ejemplo, podemos crear un menú de una web, que permita llevarnos a las distintas secciones o apartados de la misma.
+        <br>En el caso de una tienda online, podría ser como un índice de los apartados de la web o un menú de navegación entre secciones de esta.
+        <h3>Contenido Principal o Main</h3>
+        La etiqueta main, es la que va a contener todo el contenido centra de nuestra página web.
+        <br>Importante: esta etiqueta no sustituye a la etiqueta body del documento HTML5, sino que va dentro de esta.
+        <br>Recordar, esta etiqueta y apartado, es la parte más importante para el usuario de nuestra página web.
+        <h3>Apartado temático o Section</h3>
+        La etiqueta section, es una etiqueta en HTML5 que nos permite agrupar contenido relacionado con un tema, normalmente incluyen un título.
+        <br>Ejemplo: Puede ser como un capítulo de un libro o la sección de un periódico.
+        <h3>Contenido Independiente o Article</h3>
+        Esuna etiqueta que permite agrupar contenido que tiene sentido por sí solo, como una noticia o publicación.
+        <br>Por ejemplo, puede ser una noticia que puede leerse por separado.
+        <h3>Contenido Secundario o Aside</h3>
+        Sirve para agrupar contenido que tiene información complementaria al contenido principal.
+        <br>Ejemplo: para mostrar información en un recuadro con una curiosidad...
+        <h3>Pie de página o Footer</h3>
+        Contiene información final como puede ser el autor, derechos de autor o enlaces relacionados.
+        <br>Es lo que se conoce como la zona final de la página web
+        <h3>Otras etiquetas que podemos utilizar: address y hgroup</h3>
+        Otras de las etiquetas a tener en cuenta en HTML5 y que podemos utilizar con menor frecuencia, son address y hgroup.
+        <br><b>address:</b> Se utiliza para indicar los datos de contacto del autor o responsable del contenido.
+        <br><b>hgroup:</b> Se utiliza para agrupar un encabezado con un subtitulo o lema asociado.
+        <br>Recordar: hgroup se suele utilizar para agrupar un título y un subtítulo, mientras que header se utiliza cuando hay metadados asociados al título.
+        <hr>
+        <h2>Diferencias entre una etiqueta Div y Span</h2>
+        En HTML5, podemos a parte de encontrarnos con las etiquetas anteriormente comentadas, con dos etiequetas que podemos usar para nuestra estructura del
+        <br>documento web.
+        <br>Estas etiquetas son la etiqueta <b>div</b> y la etiqueta <b>span</b>
+        <ul>
+            <li><b>div:</b> Esta etiqueta se utiliza para poder agrupar contenido en bloques.
+                <br>Cada div forma un bloque que normalmente empieza en una línea nueva.
+            </li>
+            <li>
+                <b>span:</b> Esta etiqueta se utiliza para agrupar una parte de una línea.
+            </li>
+        </ul>
+        <br>Ejemplo de una etiqueta div
+        <br><div style="background-color: red; color:whitesmoke">
+            <h2>Mi perfil</h2>
+            <p>Me llamo Raúl</p>
+        </div>
+        <div style="background-color: blue; color:whitesmoke">
+            <h2 >Mis aficiones</h2>
+            <p>Me gusta las nuevas tecnologías y me apasiona Linux</p>
+        </div>  
+    <br>Ejemplo de una etiqueta span
+    <p>
+        Mi color favorito es <span style="color:darkgreen">verde</span>
+    </p>  
+    <br>Como se puede ver en el ejemplo, la palabra "verde" aparece en color verde, y el resto de la frase conserva su formato.
+    <ul>
+        <li><b>div:</b> Se utiliza para agrupar bloques de contenido. Ejemplo: un recuadro de perfil</li>
+        <li><b>span:</b> Se utiliza para agrupar parte deuna línea. Ejemplo: Una palabra coloreada.</li>
+    </ul> 
+    Truco: div organiza bloques. Mientras que span permite trabajar con partes pequeñas de texto. 
+    <br>Hay que tener en cuenta, que ninguno aporta por sí mismo un significado específico.
+</body>
+</html>
